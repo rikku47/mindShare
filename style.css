@@ -29,6 +29,47 @@ body {
   color: #52606d;
 }
 
+.idea-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 520px;
+  margin-bottom: 20px;
+}
+
+.idea-form label {
+  font-weight: 700;
+}
+
+.idea-form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.idea-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid #bcccdc;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.idea-form button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.idea-form button:hover {
+  background: #1d4ed8;
+}
+
 .mindmap {
   min-height: 520px;
   border: 1px solid #d9e2ec;
@@ -56,4 +97,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 560px) {
+  .app {
+    padding: 20px;
+  }
+
+  .idea-form-row {
+    flex-direction: column;
+  }
 }
