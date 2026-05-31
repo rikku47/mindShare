@@ -21,6 +21,20 @@
       </div>
     </form>
 
+    <form class="edit-panel" id="edit-panel" hidden>
+      <h2>Knoten bearbeiten</h2>
+      <label for="edit-title">Titel</label>
+      <input id="edit-title" type="text">
+
+      <label for="edit-description">Beschreibung</label>
+      <textarea id="edit-description" rows="4"></textarea>
+
+      <div class="edit-actions">
+        <button type="submit">Speichern</button>
+        <button class="button-danger" id="delete-node" type="button">Loeschen</button>
+      </div>
+    </form>
+
     <section class="mindmap" id="mindmap" aria-label="Mindmap Arbeitsbereich">
       <div class="node node-main">Meine Idee</div>
     </section>
