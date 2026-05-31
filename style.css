@@ -90,6 +90,13 @@ body {
   border-radius: 8px;
   background: #eff6ff;
   font-weight: 700;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.node:active {
+  cursor: grabbing;
 }
 
 .node-main {
