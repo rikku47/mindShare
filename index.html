@@ -13,7 +13,15 @@
       <p>Eine kleine Mindmap-Uebung zum Sammeln und Verbinden von Ideen.</p>
     </header>
 
-    <section class="mindmap" aria-label="Mindmap Arbeitsbereich">
+    <form class="idea-form" id="idea-form">
+      <label for="idea-input">Neue Idee</label>
+      <div class="idea-form-row">
+        <input id="idea-input" type="text" placeholder="Idee eingeben">
+        <button type="submit">Hinzufuegen</button>
+      </div>
+    </form>
+
+    <section class="mindmap" id="mindmap" aria-label="Mindmap Arbeitsbereich">
       <div class="node node-main">Meine Idee</div>
     </section>
   </main>
